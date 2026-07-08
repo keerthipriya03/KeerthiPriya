@@ -7,11 +7,12 @@ function Contact() {
       <h2>Contact Me</h2>
 
       <div className="contact-container">
-        <form>
-          <input placeholder="Name" />
-          <input placeholder="Email" />
-          <textarea placeholder="Message"></textarea>
-          <button>Send</button>
+        <form action="https://formsubmit.co/keerthipriyadwarampudi@gmail.com" method="POST">
+          <input type="text" name="name" required placeholder="Your Name" />
+          <input type="email" name="email" required placeholder="Your Email" />
+          <textarea name="message" required placeholder="Your Message"></textarea>
+
+          <button type="submit">Send</button>
         </form>
 
         <img src={profileImage} alt="Profile" />
