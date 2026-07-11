@@ -24,7 +24,6 @@ function Hero() {
             Welcome to my portfolio
           </span>
 
-
           <h1>
             Hi, I am Keerthi Priya 👋
           </h1>

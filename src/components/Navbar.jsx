@@ -14,7 +14,6 @@ function Navbar({ theme, setTheme }) {
         &lt;KP /&gt;
       </h2>
 
-
       <button
         className="menu-btn"
         onClick={() => setMenu(!menu)}

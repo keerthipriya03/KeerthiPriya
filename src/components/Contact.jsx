@@ -41,7 +41,7 @@ function Contact() {
               </a>
             </div>
           </div>
-
+ 
           <div className="info-card">
             <FaLinkedin className="info-icon" />
             <div>

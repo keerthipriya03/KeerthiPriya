@@ -7,7 +7,6 @@ import notestk from "../images/notestk.png";
 import chatapp from "../images/chatapp.png";
 import opticrop from "../images/opticrop.png";
 // import swapnsave from "../images/swapnsave.png";
-
 const projects = [
   {
     title: "MyNoteStack",

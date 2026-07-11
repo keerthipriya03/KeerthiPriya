@@ -17,7 +17,7 @@ const profiles = [
     icon: <SiLeetcode />,
     link: "https://leetcode.com/u/keerthipriya3/",
   },
-  {
+  { 
     name: "GitHub",
     icon: <SiGithub />,
     link: "https://github.com/keerthipriya03",
@@ -57,6 +57,7 @@ function CodingProfiles() {
           </a>
         ))}
       </div>
+      
     </section>
   );
 }

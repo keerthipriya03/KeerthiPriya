@@ -40,7 +40,7 @@
   --space-lg:        2rem;
   --space-xl:        3rem;
 }
-
+ 
 [data-theme="dark"] {
   /* Brand Colors */
   --primary:         #818CF8;

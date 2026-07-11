@@ -8,7 +8,6 @@ import {
   FaGitAlt,
   FaPython,
 } from "react-icons/fa";
-
 import {
   SiMysql,
 } from "react-icons/si";

@@ -29,7 +29,8 @@ function About() {
         <div className="about-cards">
           <div className="about-card">
             <h3>Education</h3>
-            <p>B.Tech in Computer Science</p>
+            <p>B.Tech Computer Science Engineering student at
+      Vignan's Institute of Information and Technology, Duvvada.</p>
           </div>
 
           <div className="about-card">
@@ -44,7 +45,7 @@ function About() {
 
           <div className="about-card">
             <h3>Interests</h3>
-            <p>Web Development • Problem Solving • UI Design</p>
+            <p>Web Development • Problem Solving • MERN stack developer</p>
           </div>
         </div>
       </div>

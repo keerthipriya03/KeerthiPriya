@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
+import About from "./components/About";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import CodingProfiles from "./components/CodingProfiles";
@@ -26,6 +27,7 @@ function App() {
 
       <main>
         <Hero />
+        <About />
         <Skills />
         <CodingProfiles />
         <Experience />

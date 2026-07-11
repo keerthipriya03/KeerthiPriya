@@ -12,7 +12,7 @@ function Experience() {
           contributions.
         </p>
       </div>
-
+ 
       <div className="timeline">
         <div className="timeline-item">
           <div className="timeline-dot"></div>

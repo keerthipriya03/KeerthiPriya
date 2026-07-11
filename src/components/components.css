@@ -1,110 +1,111 @@
 /* Navbar */
+.navbar {
 
-.navbar{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px 8%;
-    background:rgba(255,255,255,.65);
-    backdrop-filter:blur(18px);
-    border-bottom:1px solid var(--border);
-    transition:.3s;
-}
+  position: sticky;
+  top:0;
 
-[data-theme="dark"] .navbar{
-    background:rgba(2,6,23,.75);
-}
+  z-index:1000;
 
-/* LOGO */
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 
-.logo{
+  padding:18px 8%;
 
-    font-size:1.4rem;
-    font-weight:700;
-    color:var(--primary);
-    letter-spacing:1px;
+  background:var(--surface);
+
+  border-bottom:1px solid var(--border);
+
+  backdrop-filter:blur(15px);
 
 }
 
-/* LINKS*/
 
-.nav-links{
-    display:flex;
-    align-items:center;
-    gap:2rem;
+.logo {
+
+  font-size:1.5rem;
+
+  font-weight:700;
+
+  color:var(--primary);
+
 }
 
-.nav-links a{
-    color:var(--text);
-    font-weight:500;
-    transition:.3s;
-    position:relative;
+
+.nav-links {
+
+  display:flex;
+
+  align-items:center;
+
+  gap:2rem;
+
 }
 
-.nav-links a::after{
-    content:"";
-    position:absolute;
-    left:0;
-    bottom:-5px;
-    height:2px;
-    width:0;
-    background:var(--primary);
-    transition:.3s;
+
+.nav-links a {
+
+  color:var(--text);
+
+  font-weight:500;
+
 }
 
-.nav-links a:hover::after{
-    width:100%;
+
+.nav-links a:hover {
+
+  color:var(--primary);
+
 }
 
-.nav-links a:hover{
-    color:var(--primary);
+
+
+.theme-btn {
+
+  width:42px;
+
+  height:42px;
+
+  border-radius:50%;
+
+  border:none;
+
+  background:var(--surface-light);
+
+  color:var(--text);
+
 }
 
-/* THEME BUTTON*/
 
-.theme-btn{
-    width:42px;
-    height:42px;
-    border-radius:50%;
-    border:none;
-    background:var(--surface-light);
-    font-size:18px;
-    transition:.3s;
+
+.resume-btn {
+
+  padding:10px 18px;
+
+  background:var(--primary);
+
+  color:white !important;
+
+  border-radius:10px;
+
 }
 
-.theme-btn:hover{
-    transform:rotate(180deg);
+
+
+.menu-btn {
+
+  display:none;
+
+  background:none;
+
+  border:none;
+
+  color:var(--text);
+
+  font-size:2rem;
+
 }
 
-/* RESUME BUTTON */
-
-.resume-btn{
-    padding:10px 18px;
-    border-radius:10px;
-    background:var(--primary);
-    color:white !important;
-    font-weight:600;
-    transition:.3s;
-}
-
-.resume-btn:hover{
-    transform:translateY(-2px);
-    box-shadow:var(--shadow);
-}
-
-/*  MENU BUTTON */
-
-.menu-btn{
-    display:none;
-    border:none;
-    background:none;
-    font-size:2rem;
-    color:var(--text);
-    cursor:pointer;
-}
 
 /* MOBILE*/
 
