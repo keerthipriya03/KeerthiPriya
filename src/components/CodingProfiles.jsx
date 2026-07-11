@@ -4,7 +4,7 @@ import {
   SiGithub,
 } from "react-icons/si";
 
-import "./Components.css";
+import "./components.css";
 
 const profiles = [
   {
@@ -57,7 +57,7 @@ function CodingProfiles() {
           </a>
         ))}
       </div>
-      
+
     </section>
   );
 }
