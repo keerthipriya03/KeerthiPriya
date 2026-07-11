@@ -1,25 +1,107 @@
-import './page.css'
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap, FaNodeJs, FaGitAlt, FaPython } from "react-icons/fa";
-import { SiMysql } from "react-icons/si";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaBootstrap,
+  FaNodeJs,
+  FaGitAlt,
+  FaPython,
+} from "react-icons/fa";
+
+import {
+  SiMysql,
+} from "react-icons/si";
+
+import "./components.css";
+
+
+const skills = [
+  {
+    name: "HTML",
+    icon: <FaHtml5 />,
+  },
+  {
+    name: "CSS",
+    icon: <FaCss3Alt />,
+  },
+  {
+    name: "JavaScript",
+    icon: <FaJs />,
+  },
+  {
+    name: "ReactJS",
+    icon: <FaReact />,
+  },
+  {
+    name: "Bootstrap",
+    icon: <FaBootstrap />,
+  },
+  {
+    name: "MySQL",
+    icon: <SiMysql />,
+  },
+  {
+    name: "Node.js",
+    icon: <FaNodeJs />,
+  },
+  {
+    name: "Git",
+    icon: <FaGitAlt />,
+  },
+  {
+    name: "Python",
+    icon: <FaPython />,
+  },
+];
+
 
 function Skills() {
   return (
-    <section id="skills">
-      <h2 style={{ textAlign: "center" }}>Skills</h2>
+    <section id="skills" className="skills section">
+
+      <div className="section-header">
+
+        <span className="section-tag">
+          Technical Skills
+        </span>
+
+        <h2>
+          Skills
+        </h2>
+
+        <p>
+          Technologies and tools I use to build responsive and scalable
+          applications.
+        </p>
+
+      </div>
+
 
       <div className="skills-grid">
-        <div className="skill-card"><FaHtml5 size={24}/> HTML</div>
-        <div className="skill-card"><FaCss3Alt size={24}/> CSS</div>
-        <div className="skill-card"><FaJs size={24}/> JavaScript</div>
-        <div className="skill-card"><FaReact size={24}/> ReactJS</div>
-        <div className="skill-card"><FaBootstrap size={24}/> Bootstrap</div>
-        <div className="skill-card"><SiMysql size={24}/> MySQL</div>
-        <div className="skill-card"><FaNodeJs size={24}/> Node.js</div>
-        <div className="skill-card"><FaGitAlt size={24}/> Git</div>
-        <div className="skill-card"><FaPython size={24}/> Python</div>
+
+        {skills.map((skill) => (
+          <div
+            className="skill-card"
+            key={skill.name}
+          >
+
+            <div className="skill-icon">
+              {skill.icon}
+            </div>
+
+            <h3>
+              {skill.name}
+            </h3>
+
+          </div>
+        ))}
+
       </div>
+
     </section>
   );
 }
+
 
 export default Skills;

@@ -1,163 +1,164 @@
-import './page.css'
-// import { default as cropfit , default as movieverse , default as notestk , default as swapnsave} from "../images";
-import cropfit from "../images/cropfit.png";
+
+import "./components.css";
+
+// import cropfit from "../images/cropfit.png";
 import movieverse from "../images/movieverse.png";
 import notestk from "../images/notestk.png";
-import swapnsave from "../images/swapnsave.png";
+import chatapp from "../images/chatapp.png";
+import opticrop from "../images/opticrop.png";
+// import swapnsave from "../images/swapnsave.png";
+
+const projects = [
+  {
+    title: "MyNoteStack",
+    subtitle: "Backend Note-Taking Application",
+    description:
+      "MyNoteStack – A backend application for creating and managing notes using RESTful APIs.",
+    image: notestk,
+    link: "https://journal-app-frontend-y90k.onrender.com//Login.html",
+    technologies: [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "VSCode",
+      "GitHub",
+    ],
+  },
+  {
+    title: "Chat-App",
+    subtitle: "Real-time Chat Application",
+    description:
+      "Chat-App – A real-time chat application that allows users to communicate instantly.",
+    image: chatapp,
+    link: "https://chat-app-a30b.onrender.com/",
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TensorFlow.js",
+      "Machine Learning",
+      "Image Processing",
+      "JSON",
+    ],
+  },
+  {
+    title: "MovieVerse",
+    subtitle: "React-based Movie Search Engine",
+    description:
+      "MovieVerse – A React-based movie search engine that fetches and displays movie details using an external API.",
+    image: movieverse,
+    link: "https://movieverse-2lgh.onrender.com/",
+    technologies: [
+      "React.js",
+      "OMDb API",
+    ],
+  },
+  {
+    title: "OptiCrop",
+    subtitle: "Machine Learning Based Crop Recommendation System",
+    description:
+      "OptiCrop is a machine learning-based web application that recommends the most suitable crop based on soil and environmental conditions. It analyzes parameters such as nitrogen, phosphorus, potassium, temperature, humidity, pH, and rainfall to provide accurate crop predictions. The system is built with a Flask backend and integrates machine learning models for efficient and data-driven agricultural recommendations.",
+    image: opticrop,
+    link: "https://opticrop-2lj9.onrender.com/",
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TensorFlow.js",
+      "Machine Learning",
+      "Image Processing",
+      "JSON",
+    ],
+  },
+  // {
+  //   title: "Crop-Fit",
+  //   subtitle: "Crop Recommendation App",
+  //   description:
+  //     "Crop-Fit – A web application that recommends crops based on soil and weather conditions.",
+  //   image: cropfit,
+  //   link: "https://crop-fit.vercel.app/",
+  //   technologies: [
+  //     "HTML",
+  //     "CSS",
+  //     "JavaScript",
+  //     "TensorFlow.js",
+  //     "Machine Learning",
+  //     "Image Processing",
+  //     "JSON",
+  //   ],
+  // },
+];
 
 function Projects() {
   return (
-    <section id="projects">
-      <h2>Projects I Have Done</h2>
-      <p>Here’s a quick summary of my projects</p>
+    <section id="projects" className="projects section">
+      <div className="section-header">
+        <span className="section-tag">
+          My Work
+        </span>
 
-      <div className="project-item">
-        <div className="project-content">
-          {/* Left side image */}
-          <div className="project-image">
-            <img src={notestk} alt="MyNoteStack" />
-          </div>
+        <h2>
+          Projects I Have Done
+        </h2>
 
-          {/* Right side details */}
-          <div className="project-details">
-            <h3>
-              <a 
-                href="https://journal-app-frontend-y90k.onrender.com/" 
-                target="_blank" 
-                rel="noreferrer" 
-                style={{ color: "inherit", textDecoration: "none" }}
-              >
-                MyNoteStack
-              </a>
-            </h3>
-            <h4>Backend Note-Taking Application</h4>
-            <p>
-              MyNoteStack – A backend application for creating and managing notes using RESTful APIs.
-            </p>
-
-            {/* Tech stack as badges/buttons */}
-            <div className="tech-stack">
-              <span className="tech-badge">Node.js</span>
-              <span className="tech-badge">Express.js</span>
-              <span className="tech-badge">MongoDB</span>
-              <span className="tech-badge">VSCode</span>
-              <span className="tech-badge">GitHub</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div className="project-item">
-        <div className="project-content">
-
-          {/* Left side  */}
-          <div className="project-details">
-            <h3>
-              <a 
-                href="https://swapnsave-frontend.onrender.com/" 
-                target="_blank" 
-                rel="noreferrer" 
-                style={{ color: "inherit", textDecoration: "none" }}
-              >
-                SwapnSave
-              </a>
-            </h3>
-            {/* <h4>One-Stop Platform for Buying, Selling, and Exchanging Coupons</h4> */}
-            <p>
-              SwapnSave – It is one-stop platform to buy, sell, or exchange coupons with ease.
-            </p>
-
-            {/* Tech stack as badges/buttons */}
-            <div className="tech-stack">
-              <span className="tech-badge">React.js</span>
-              <span className="tech-badge">Express.js</span>
-              <span className="tech-badge">MongoDB</span>
-              <span className="tech-badge">VSCode</span>
-              <span className="tech-badge">GitHub</span>
-            </div>
-          </div>
-          {/* right side */}
-          <div className="project-image">
-            <img src={swapnsave} alt="SwapnSave" />
-          </div>
-        </div>
-      </div>     
-
-      <div className="project-item">
-        <div className="project-content">
-          {/* Left side image */}
-          <div className="project-image">
-            <img src={movieverse} alt="MovieVerse" />
-          </div>
-
-          {/* Right side details */}
-          <div className="project-details">
-            <h3>
-              <a 
-                href="https://movieverse-2lgh.onrender.com/" 
-                target="_blank" 
-                rel="noreferrer" 
-                style={{ color: "inherit", textDecoration: "none" }}
-              >
-                MovieVerse
-              </a>
-            </h3>
-            <h4>React-based Movie Search Engine</h4>
-            <p>
-              MovieVerse – A React-based movie search engine that fetches and displays movie details using an external API.
-            </p>
-
-            {/* Tech stack as badges/buttons */}
-            <div className="tech-stack">
-              <span className="tech-badge">React.js</span>
-              <span className="tech-badge">Omdb API</span>
-            </div>
-          </div>
-        </div>
+        <p>
+          Here is a collection of projects I have built using modern
+          technologies.
+        </p>
       </div>
 
-      <div className="project-item">
-        <div className="project-content">
-          {/* Left side  */}
+      <div className="projects-container">
+        {projects.map((project, index) => (
+          <div
+            className={`project-content ${
+              index % 2 !== 0 ? "reverse" : ""
+            }`}
+            key={project.title}
+          >
+            <div className="project-image">
+              <img
+                src={project.image}
+                alt={project.title}
+              />
+            </div>
 
-          <div className="project-details">
-            <h3>
-              <a 
-                href="https://crop-fit.vercel.app/" 
-                target="_blank" 
-                rel="noreferrer" 
-                style={{ color: "inherit", textDecoration: "none" }}
-              >
-                Crop-Fit
-              </a>
-            </h3>
-            <h4>Crop Recommendation App</h4>
-            <p>
-              Crop-Fit – A web application that recommends crops based on soil and weather conditions.
-            </p>
+            <div className="project-details">
+              <h3>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {project.title}
+                </a>
+              </h3>
 
-            {/* Tech stack as badges/buttons */}
-            <div className="tech-stack"> HTML, CSS, JavaScript, TensorFlow.js, Machine Learning, Image Processing, JSON
-              <span className="tech-badge">HTML</span>
-              <span className="tech-badge">CSS</span>
-              <span className="tech-badge">JavaScript</span>
-              <span className="tech-badge">TensorFlow.js</span>
-              <span className="tech-badge">Machine Learning</span>
-              <span className="tech-badge">Image Processing</span>
-              <span className="tech-badge">JSON</span>
+              {project.subtitle && (
+                <h4>
+                  {project.subtitle}
+                </h4>
+              )}
+
+              <p>
+                {project.description}
+              </p>
+
+              <div className="tech-stack">
+                {project.technologies.map((tech) => (
+                  <span
+                    className="tech-badge"
+                    key={tech}
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
-          {/* Right side */}
-          <div className="project-image">
-            <img src={cropfit} alt="Crop-Fit" />
-          </div>
-        </div>
+        ))}
       </div>
-
     </section>
   );
 }
 
 export default Projects;
-
-

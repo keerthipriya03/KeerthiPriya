@@ -1,36 +1,78 @@
+import "./components.css";
+import { HiMenuAlt3, HiX } from "react-icons/hi";
+import { useState } from "react";
+
 function Navbar({ theme, setTheme }) {
+
+  const [menu, setMenu] = useState(false);
+
+
   return (
     <nav className="navbar">
-      {/* FIX 1: <N /> code-style logo instead of plain "Portfolio" text */}
-      {/* <h2 className="logo">&lt;N /&gt;</h2> */}
-      <h2>Portfolio</h2>
 
-      {/* FIX 2: ul must be INSIDE nav-right so all right-side items flex together */}
-      <div className="nav-right">
-        <ul>
-          <li><a href="#hero">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <h2 className="logo">
+        &lt;KP /&gt;
+      </h2>
+
+
+      <button
+        className="menu-btn"
+        onClick={() => setMenu(!menu)}
+      >
+        {
+          menu 
+          ? <HiX />
+          : <HiMenuAlt3 />
+        }
+      </button>
+
+
+      <div className={`nav-links ${menu ? "active" : ""}`}>
+
+        <a href="#hero">
+          About
+        </a>
+
+        <a href="#projects">
+          Projects
+        </a>
+
+        <a href="#contact">
+          Contact
+        </a>
+
 
         <button
           className="theme-btn"
-          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          onClick={() =>
+            setTheme(
+              theme === "dark"
+              ? "light"
+              : "dark"
+            )
+          }
         >
-          {theme === "dark" ? "☀️" : "🌙"}
+          {
+            theme === "dark"
+            ? "☀️"
+            : "🌙"
+          }
         </button>
 
-        {/* FIX 3: resume-btn class so CSS styles it as a bordered button */}
-        <a href="https://drive.google.com/file/d/1OeGYhjR_SCD4kDH6yD-tySxr-C5BV1fw/view?usp=drivesdk" target="_blank" className="resume-btn">
+
+        <a
+          href="https://drive.google.com/file/d/1OeGYhjR_SCD4kDH6yD-tySxr-C5BV1fw/view"
+          target="_blank"
+          rel="noreferrer"
+          className="resume-btn"
+        >
           My Resume
         </a>
+
       </div>
+
     </nav>
   );
 }
 
 export default Navbar;
-
-
-
-
