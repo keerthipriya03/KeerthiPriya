@@ -60,7 +60,7 @@ function Navbar({ theme, setTheme }) {
 
 
         <a
-          href="https://drive.google.com/file/d/1OeGYhjR_SCD4kDH6yD-tySxr-C5BV1fw/view"
+          href="https://drive.google.com/file/d/16oe4koniNCCOxiV1Wv2Gmfq9a-wLRz0l/view?usp=drivesdk"
           target="_blank"
           rel="noreferrer"
           className="resume-btn"
