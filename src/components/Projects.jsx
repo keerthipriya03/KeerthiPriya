@@ -6,8 +6,30 @@ import movieverse from "../images/movieverse.png";
 import notestk from "../images/notestk.png";
 import chatapp from "../images/chatapp.png";
 import opticrop from "../images/opticrop.png";
+import cinematch from "../images/Screenshot 2026-10-09 161154.png";
 // import swapnsave from "../images/swapnsave.png";
 const projects = [
+  {
+  title: "CineMatch",
+  subtitle: "Group-Based Indian Movie Recommendation Platform",
+  description:
+    "CineMatch is a full-stack MERN application that helps friends decide which Indian movie to watch together. Users can create a movie night, invite friends using a unique group code, submit preferences, and receive recommendations based on combined group inputs.",
+  image: cinematch,
+  link: "https://github.com/keerthipriya03/CineMatch",
+  technologies: [
+    "React.js",
+    "Vite",
+    "Node.js",
+    "Express.js",
+    "MongoDB Atlas",
+    "Mongoose",
+    "JWT",
+    "bcrypt",
+    "Axios",
+    "Git & GitHub",
+    "Render",
+  ],
+},
   {
     title: "MyNoteStack",
     subtitle: "Backend Note-Taking Application",
