@@ -14,11 +14,34 @@ function Experience() {
       </div>
  
       <div className="timeline">
+        
         <div className="timeline-item">
           <div className="timeline-dot"></div>
 
           <div className="timeline-content">
-            <span className="timeline-date">Jan 2026 – Feb 2026</span>
+            <span className="timeline-date">May 2026 – July 2026</span>
+
+            <h3>Smartbridge Educational Services Pvt. Ltd. </h3>
+
+            <h4>AI/ML Intern</h4>
+
+            <ul>
+              <li>
+                Developed and evaluated machine learning models for predictive analysis and recommendation systems.
+              </li>
+
+              <li>
+                Performed data preprocessing and model training to enhance model accuracy and efficiency.
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div className="timeline-item">
+          <div className="timeline-dot"></div>
+
+          <div className="timeline-content">
+            <span className="timeline-date">Jan 2026 – Mar 2026</span>
 
             <h3>Elite Coders Winter of Code</h3>
 
